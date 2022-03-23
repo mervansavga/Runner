@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{6DDAF2E3-E8B1-4380-B9DF-9690C249E814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfMultiple", "SumOfMultiple\SumOfMultiple.csproj", "{DBF3E338-7EED-4998-95B1-CF399D6891BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequenceAnalysis", "SequenceAnalysis\SequenceAnalysis.csproj", "{96F9CC40-DDB7-4339-8A35-249D4185AC28}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DDAF2E3-E8B1-4380-B9DF-9690C249E814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDAF2E3-E8B1-4380-B9DF-9690C249E814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDAF2E3-E8B1-4380-B9DF-9690C249E814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDAF2E3-E8B1-4380-B9DF-9690C249E814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF3E338-7EED-4998-95B1-CF399D6891BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF3E338-7EED-4998-95B1-CF399D6891BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF3E338-7EED-4998-95B1-CF399D6891BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF3E338-7EED-4998-95B1-CF399D6891BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F9CC40-DDB7-4339-8A35-249D4185AC28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F9CC40-DDB7-4339-8A35-249D4185AC28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F9CC40-DDB7-4339-8A35-249D4185AC28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F9CC40-DDB7-4339-8A35-249D4185AC28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
