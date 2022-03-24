@@ -8,8 +8,8 @@ namespace SumOfMultipleTest
         [TestMethod]
         public void TestFindSumOfMultiplesOfTwoIntegersAndValidUpperLimit()
         {
-            int actualResult = SumOfMultiplesOfNumbers.FindSumOfMultiplesOfNumbers(10, 3, 5);
-            int expectedResult = 23;
+            int actualResult = SumOfMultiplesOfNumbers.FindSumOfMultiplesOfNumbers(1000, 3, 5);
+            int expectedResult = 233168;
             Assert.AreEqual(expectedResult, actualResult, 0, "Found sum is incorrect");
         }
 
@@ -36,12 +36,6 @@ namespace SumOfMultipleTest
             int expectedResult = -1;
             Assert.AreEqual(expectedResult, actualResult, 0, "Found sum is incorrect");
         }
-        [TestMethod]
-        public void TestFindSumOfMultiplesOfNoIntegersAndValidUpperLimit_Fail()
-        {
-            int actualResult = SumOfMultiplesOfNumbers.FindSumOfMultiplesOfNumbers(10);
-            int expectedResult = -1;
-            Assert.AreEqual(expectedResult, actualResult, 0, "Found sum is incorrect");
-        }
+
     }
 }

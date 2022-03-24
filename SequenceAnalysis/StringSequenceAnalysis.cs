@@ -8,11 +8,11 @@ namespace SequenceAnalysis
     {
 
         /// <summary>
-        ///Sorts the capital lettered words in a sentence
+        /// Finds and sorts the uppercase words in a given string
         /// </summary>
-        /// <param name="data"></param>
+        /// <param name="inputString">Input String</param>
         /// <returns></returns>
-        public static string AnalyzeStringSequence(string inputString)
+        public static string RunAnalysis(string inputString)
         {
             // An alternative solution could be to use method chaining by implementing our
             // own alternative for a string class depending on the purpose of the library
@@ -41,10 +41,10 @@ namespace SequenceAnalysis
             string currentWord;
             string[] words = inputString.Split(' ');
 
-            for(int i=0; i < words.Length; i++)
+            for(int i = 0; i < words.Length; i++)
             {
                 currentWord = words[i];
-                if (IsUpper(currentWord))
+                if (IsWordUpper(currentWord))
                 {
                     sb.Append(currentWord);
                 }
@@ -55,7 +55,7 @@ namespace SequenceAnalysis
 
         }
 
-        private static bool IsUpper(string word)
+        private static bool IsWordUpper(string word)
         {
             char currentLetter;
 
@@ -64,6 +64,7 @@ namespace SequenceAnalysis
                 currentLetter = word[i];
 
                 if (!char.IsUpper(currentLetter)) {
+
                     return false;
                 }
             }
@@ -75,7 +76,9 @@ namespace SequenceAnalysis
         {
             // An alternative to use would be Linq
             // Or implementing my own quicksort/mergesort
-            // but found it unnecessary since Array.Sort() already uses a well optimized quick sort
+            // but found it unnecessary since Array.Sort() already uses a well optimized sort with nlogn complexity
+            // https://docs.microsoft.com/en-us/dotnet/api/system.array.sort?view=net-5.0
+
             char[] sortableArray = inputString.ToCharArray();
             Array.Sort(sortableArray);
             return new string(sortableArray);

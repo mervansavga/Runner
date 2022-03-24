@@ -8,7 +8,7 @@ namespace SequenceAnalysisTest
         [TestMethod]
         public void TestAnalyzeStringSequenceWithValidInput()
         {
-            string actualResult = StringSequenceAnalysis.AnalyzeStringSequence("This IS a STRING");
+            string actualResult = StringSequenceAnalysis.RunAnalysis("This IS a STRING");
             string expectedResult = "GIINRSST";
             Assert.AreEqual(expectedResult, actualResult, false, "The string output is incorrect");
 
@@ -16,7 +16,7 @@ namespace SequenceAnalysisTest
         [TestMethod]
         public void TestAnalyzeStringSequenceWithNumericInput()
         {
-            string actualResult = StringSequenceAnalysis.AnalyzeStringSequence("This 1IS23 a STRING");
+            string actualResult = StringSequenceAnalysis.RunAnalysis("This 1IS23 a STRING");
             string expectedResult = "GINRST";
             Assert.AreEqual(expectedResult, actualResult, false, "The string output is incorrect");
 
@@ -25,7 +25,7 @@ namespace SequenceAnalysisTest
         [TestMethod]
         public void TestAnalyzeStringSequenceWithEmptyInput()
         {
-            string actualResult = StringSequenceAnalysis.AnalyzeStringSequence("");
+            string actualResult = StringSequenceAnalysis.RunAnalysis("");
             string expectedResult = "";
             Assert.AreEqual(expectedResult, actualResult, false, "The string output is incorrect");
         }
@@ -33,7 +33,7 @@ namespace SequenceAnalysisTest
         [TestMethod]
         public void TestAnalyzeStringSequenceWithSpecialCharacters()
         {
-            string actualResult = StringSequenceAnalysis.AnalyzeStringSequence(";S TH!S A STR*NG?");
+            string actualResult = StringSequenceAnalysis.RunAnalysis(";S TH!S A STR*NG?");
             string expectedResult = "A";
             Assert.AreEqual(expectedResult, actualResult, false, "The string output is incorrect");
         }
